@@ -3,7 +3,7 @@ class StackAndHeapConcept {
       int num = 10; // This variable is stored in the stack memory
       String str ="Hello, World!"; // This variable is stored in the heap memory
       Calculator calc = new Calculator(); // This object is stored in the heap memory
-      Calaculator calc2 = new Calculator(); // This object is stored in the heap memory
+      Calculator calc2 = new Calculator(); // This object is stored in the heap memory
 
       calc.calcNum = 20; // Modifying the calcNum variable of the first Calculator object
       System.out.println("calc.calcNum: " + calc.calcNum); // Output:

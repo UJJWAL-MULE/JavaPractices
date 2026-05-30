@@ -27,7 +27,7 @@ class ArrayPractice{
 	    s3.marks= 24;
 	    s3.rollNumber =3;
 	    
-	    Student students[] = new Student[3];
+	    Student students[] = new Student[3];  // This creates an array of Student objects with a size of 3, stored in the heap memory
 	    students[0] = s1;
 	    students[1] = s2;
 	    students[2]= s3;
@@ -37,7 +37,12 @@ class ArrayPractice{
 	        
 	    }
 	    
-  }
+      StringBuffer name = new StringBuffer("Ujjwal");  // This creates a StringBuffer object with the value "Ujjwal", stored in the heap memory
+      System.out.println(name); // This will print the value of the StringBuffer object, which
+      String newName = name.toString(); // This converts the StringBuffer object to a String object, which is also stored in the heap memory
+      String abcd =newName.replace("Ujjwal", "Rushi"); // This creates a new String object with the value "Rushi", stored in the heap memory, but does not modify the original StringBuffer object
+      System.out.println(abcd); // This will print the original value of the StringBuffer object, which is "Ujjwal"
+    }   
 }
 
 class Student {
