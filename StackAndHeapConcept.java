@@ -1,7 +1,7 @@
 class StackAndHeapConcept {
     public static void main(String[] args) {
-      int num = 10; // This variable is stored in the stack memory
-      String str ="Hello, World!"; // This variable is stored in the heap memory
+      // int num = 10; // This variable is stored in the stack memory
+      // String str ="Hello, World!"; // This variable is stored in the heap memory
       Calculator calc = new Calculator(); // This object is stored in the heap memory
       Calculator calc2 = new Calculator(); // This object is stored in the heap memory
 
